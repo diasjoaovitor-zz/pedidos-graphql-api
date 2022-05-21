@@ -1,33 +1,11 @@
-```
-sudo npm install -g firebase-tools
+## Sobre
 
-mkdir pedidos-graphql-api
-cd pedidos-graphql-api
+API desenvolvida para servir o projeto: [Sistema para gerenciamento de pedidos em pequenas empresas](https://github.com/diasjoaovitor/pedidos).
 
-yarn init -y
-git init .
+## Tecnologias
 
-firebase init # select firestore and functions
+- [NodeJS](https://nodejs.org/en/about/)
 
-mkdir functions/graphql
-
-cd functions/graphql && touch types.js resolvers.js queries.js schema.js index.js && cd ../
-
-yarn && yarn add graphql graphql-yoga
-```
-
-in `package.json` adds
-
-```json
-{
-  // [...]
-  "type": "module"
-}
-```
-
-and removes all lint configs
-
-```
-cd .. && firebase deploy
-cd functions && yarn serve
-```
+- [GraphQL Yoga](https://www.graphql-yoga.com/)
+ 
+- [Firebase](https://firebase.google.com/?hl=pt-br)
