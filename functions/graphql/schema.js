@@ -1,6 +1,7 @@
 import { GraphQLSchema } from "graphql"
-import { getProductsQuery } from "./queries.js"
+import { query } from "./query.js"
+import { mutation } from "./mutation.js"
 
 export const schema = new GraphQLSchema({
-  query: getProductsQuery
+  query, mutation
 })
